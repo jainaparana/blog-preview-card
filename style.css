@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 384px;
+  max-height: 510px;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 10px 10px 0px black;
+  border: 1px solid black;
+}
+
+.card img {
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.learn {
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+}
+.date {
+  color: hsl(0, 0%, 7%);
+  font-weight: 500;
+  margin-bottom: 12px;
+  font-size: 0.75rem;
+  max-height: 18px;
+  line-height: 150%;
+}
+h1 {
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+p {
+  font-weight: 500;
+  color: hsl(0, 0%, 42%);
+  margin-bottom: 20px;
+  line-height: 150%;
+  font-size: 1rem;
+}
+
+.final {
+  display: flex;
+  align-items: center; /* Vertically center the image and text */
+  gap: 12px;
+  max-height: 32px;
+}
+.avatar {
+  max-width: 32px;
+  max-height: 32px;
+
+  margin-top: 24px; /* Ensure no unexpected margin */
+
+  display: block;
+  object-fit: cover;
+}
+.final span {
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+  font-size: 0.9rem;
+}
+@media (max-width: 375px) {
+  .card {
+    max-width: 327px;
+  }
+  h1 {
+    font-size: 1.1rem; /* Reduce font size */
+  }
+  p {
+    font-size: 14px;
+  }
+}
